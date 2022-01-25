@@ -6,17 +6,17 @@ import task2.animals.interfaces.Walkable
 class Beaver(name: String) : Animal(name), Swimmable, Walkable {
 
     override fun swim() {
-        state = LifecycleState.SWIM
+        state = State.SWIM
         println("${this.name} is swimming. Beavers swim like a fish.")
     }
 
     override fun walk() {
-        state = LifecycleState.WALK
+        state = State.WALK
         println("${this.name} is walking.")
     }
 
     override fun meetTheWorld() {
-        state = LifecycleState.BE_BORN
+        state = State.BE_BORN
         println("$name met the world.")
     }
 }

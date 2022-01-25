@@ -6,7 +6,7 @@ import kotlin.reflect.KFunction
 
 
 abstract class Animal(val name: String) : Eatable, Movable, Sleepable, Dieable {
-    lateinit var state: LifecycleState
+    lateinit var state: State
         protected set
 
     init {
@@ -34,7 +34,7 @@ abstract class Animal(val name: String) : Eatable, Movable, Sleepable, Dieable {
     abstract fun meetTheWorld()
 
     override fun eat() {
-        state = LifecycleState.EAT
+        state = State.EAT
         println("${this.name} is eating")
     }
 
@@ -47,12 +47,12 @@ abstract class Animal(val name: String) : Eatable, Movable, Sleepable, Dieable {
     }
 
     override fun sleep() {
-        state = LifecycleState.SLEEP
+        state = State.SLEEP
         println("${this.name} is sleeping")
     }
 
     override fun die() {
-        state = LifecycleState.DEAD
+        state = State.DEAD
         println("${this.name} is dead. RIP")
     }
 }

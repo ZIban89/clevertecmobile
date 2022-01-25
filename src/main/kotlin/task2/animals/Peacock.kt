@@ -5,17 +5,17 @@ import task2.animals.interfaces.Walkable
 
 class Peacock(name: String) : Animal(name), Walkable, Flyable {
     override fun fly() {
-        state = LifecycleState.FLY
+        state = State.FLY
         println("${this.name} is trying to fly.")
     }
 
     override fun walk() {
-        state = LifecycleState.WALK
+        state = State.WALK
         println("${this.name} is walking. What an amazing bird!")
     }
 
     override fun meetTheWorld() {
-        state = LifecycleState.BE_BORN
+        state = State.BE_BORN
         println("$name hatched from an egg")
     }
 }

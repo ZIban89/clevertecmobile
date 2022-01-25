@@ -1,5 +1,5 @@
 package task2.animals.interfaces
 
-interface Walkable {
+interface Walkable : Movable {
     fun walk()
 }

@@ -1,6 +1,6 @@
 package task2.animals
 
-enum class LifecycleState {
+enum class State {
     WALK,
     FLY,
     DEAD,

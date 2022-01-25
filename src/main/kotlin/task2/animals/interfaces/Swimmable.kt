@@ -1,5 +1,5 @@
 package task2.animals.interfaces
 
-interface Swimmable {
+interface Swimmable : Movable {
     fun swim()
 }

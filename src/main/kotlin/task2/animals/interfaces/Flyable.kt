@@ -1,5 +1,5 @@
 package task2.animals.interfaces
 
-interface Flyable {
+interface Flyable : Movable {
     fun fly()
 }
